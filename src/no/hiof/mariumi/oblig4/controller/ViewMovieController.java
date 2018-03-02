@@ -5,12 +5,17 @@ import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.stage.Stage;
 import no.hiof.mariumi.oblig4.ExecGui;
+import no.hiof.mariumi.oblig4.model.Movie;
 import no.hiof.mariumi.oblig4.model.Production;
 
 import java.time.format.DateTimeFormatter;
 
 public class ViewMovieController {
+    public DatePicker idDatePicker;
+    private boolean editMode = false;
+
     // Standards
     DateTimeFormatter stdDate = DateTimeFormatter.ofPattern("dd LLLL yyyy");
 
@@ -22,8 +27,6 @@ public class ViewMovieController {
     @FXML
     private TextArea idMovieDescription;
     @FXML
-    private TextField idMovieReleasedate;
-    @FXML
     private TextField idMovieRuntime;
     @FXML
     private Button btnNewMovie;
@@ -31,6 +34,8 @@ public class ViewMovieController {
     private Button btnEditMovie;
     @FXML
     private Button idDeleteMovie;
+    @FXML
+    private Button btnSave;
 
     @FXML
     public void initialize() {
@@ -38,15 +43,26 @@ public class ViewMovieController {
         idMovieList.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Production>() {
             @Override
             public void changed(ObservableValue<? extends Production> observable, Production oldValue, Production newValue) {
-                updateInfo(newValue);
+                if(newValue != null)
+                    updateInfo(newValue);
             }
         });
+        idMovieList.getSelectionModel().select(0);
+
+        if(!editMode) {
+            btnSave.setVisible(false);
+
+            idDatePicker.setOnMouseClicked(e -> {
+                if (idDatePicker.isShowing())
+                    idDatePicker.hide();
+            });
+        }
     }
 
     private void updateInfo(Production selectedProduction) {
         idMovieTitle.setText(selectedProduction.getTitle());
         idMovieDescription.setText(selectedProduction.getDescription());
-        idMovieReleasedate.setText(selectedProduction.getReleaseDate().format(stdDate));
+        idDatePicker.setValue(selectedProduction.getReleaseDate());
         idMovieRuntime.setText(selectedProduction.getRuntime() + " min");
     }
 
@@ -55,6 +71,15 @@ public class ViewMovieController {
     }
 
     public void deleteMovie(ActionEvent actionEvent) {
-        idMovieList.getItems().remove(idMovieList.getSelectionModel().getSelectedIndex());
+        if(!idMovieList.getItems().isEmpty()){
+            idMovieList.getItems().remove(idMovieList.getSelectionModel().getSelectedIndex());
+        }
+        else {
+            ExecGui.prodSys.showError("Stop deleting stuff that isn't there man..");
+        }
+    }
+
+    public void saveMovie(ActionEvent actionEvent) {
+
     }
 }

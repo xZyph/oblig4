@@ -99,15 +99,14 @@ public class ExecGui extends Application{
         Stage newMovie = new Stage();
         Scene addMovie = new Scene(addMovieFXML);
         newMovie.setScene(addMovie);
-        newMovie.setAlwaysOnTop(true);
         newMovie.initOwner(primaryStage);
         newMovie.initModality(Modality.WINDOW_MODAL);
         newMovie.showAndWait();
     }
 
-    private void showError(String msg) {
+    public void showError(String msg) {
         Alert e = new Alert(Alert.AlertType.ERROR);
-        e.setTitle("Error");
+        e.setTitle("Wait.. what? There seems to be an error here...");
         e.setHeaderText(null);
         e.setContentText(msg);
         e.show();
