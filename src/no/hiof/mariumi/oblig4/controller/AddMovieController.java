@@ -3,6 +3,7 @@ package no.hiof.mariumi.oblig4.controller;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -13,6 +14,8 @@ import no.hiof.mariumi.oblig4.model.Production;
 import java.time.LocalDate;
 
 public class AddMovieController {
+    @FXML
+    private DatePicker idDatePicker;
     @FXML
     private TextField idMovieTitle;
     @FXML
@@ -37,7 +40,7 @@ public class AddMovieController {
         Production newObj = new Movie(
                 idMovieTitle.getText(),
                 idMovieDescription.getText(),
-                LocalDate.now(),
+                idDatePicker.getValue(),
                 Integer.parseInt(idMovieRuntime.getText())
         );
 

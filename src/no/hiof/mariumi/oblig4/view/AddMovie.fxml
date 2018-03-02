@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
@@ -44,8 +45,8 @@
             <Label text="Runtime" GridPane.rowIndex="3" />
             <TextField fx:id="idMovieTitle" GridPane.columnIndex="1" />
             <TextArea fx:id="idMovieDescription" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField fx:id="idMovieReleasedate" disable="true" text="Disabled due to the hassle of making it secure" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <TextField fx:id="idMovieRuntime" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <DatePicker fx:id="idDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="2" />
          </children>
       </GridPane>
    </children>
