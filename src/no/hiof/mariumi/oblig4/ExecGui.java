@@ -29,6 +29,7 @@ import java.time.LocalDate;
  */
 public class ExecGui extends Application{
     public static ExecGui prodSys;
+    public int selectedItem = 0;
     private Stage primaryStage;
     private ObservableList<Production> movieList = FXCollections.observableArrayList();
 
@@ -67,12 +68,11 @@ public class ExecGui extends Application{
     @Override
     public void start(Stage primaryStage) throws Exception {
         this.primaryStage = primaryStage;
-        movieOverview();
+        viewMovies();
     }
 
-    public void movieOverview() {
+    public void viewMovies() {
         Parent viewMoviesFXML = null;
-        Scene viewMovies;
 
         try {
             viewMoviesFXML = new FXMLLoader().load(getClass().getResource("view/ViewMovies.fxml"));
@@ -81,8 +81,24 @@ public class ExecGui extends Application{
             showError(e.getMessage());
         }
 
-        viewMovies = new Scene(viewMoviesFXML);
+        Scene viewMovies = new Scene(viewMoviesFXML);
         primaryStage.setScene(viewMovies);
+        primaryStage.setTitle("Movie Overview");
+        primaryStage.show();
+    }
+
+    public void editMovies() {
+        Parent editMoviesFXML = null;
+
+        try {
+            editMoviesFXML = new FXMLLoader().load(getClass().getResource("view/EditMovies.fxml"));
+        }
+        catch (IOException e) {
+            showError(e.getMessage());
+        }
+
+        Scene editMovies = new Scene(editMoviesFXML);
+        primaryStage.setScene(editMovies);
         primaryStage.setTitle("Movie Overview");
         primaryStage.show();
     }

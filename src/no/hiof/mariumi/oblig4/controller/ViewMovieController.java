@@ -9,57 +9,50 @@ import no.hiof.mariumi.oblig4.ExecGui;
 import no.hiof.mariumi.oblig4.customcomponents.numberfield.NumberField;
 import no.hiof.mariumi.oblig4.model.Production;
 
-import java.time.format.DateTimeFormatter;
-import java.util.Collections;
-
 public class ViewMovieController {
-    public DatePicker idDatePicker;
-    private boolean editMode = false;
-    private int selectedItem = 0;
-
-    // Standards
-    DateTimeFormatter stdDate = DateTimeFormatter.ofPattern("dd LLLL yyyy");
 
     // GUI Elements
     @FXML
-    private ListView<Production> idMovieList;
+    private ListView<Production> movieList;
     @FXML
-    private Label idMovieTitle;
+    private Label titleLabel;
     @FXML
-    private TextArea idMovieDescription;
+    private TextArea description;
     @FXML
-    private NumberField idMovieRuntime;
+    private DatePicker releaseDate;
     @FXML
-    private Button btnNewMovie;
+    private NumberField runtime;
     @FXML
-    private Button btnEditMovie;
+    private Button btnNew;
     @FXML
-    private Button idDeleteMovie;
+    private Button btnEdit;
     @FXML
-    private Button btnSave;
+    private Button btnDelete;
 
     @FXML
     public void initialize() {
         // Updating fields based on item chosen.
-        idMovieList.setItems(ExecGui.prodSys.getMovieList());
-        idMovieList.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Production>() {
+        movieList.setItems(ExecGui.prodSys.getMovieList());
+        movieList.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Production>() {
             @Override
             public void changed(ObservableValue<? extends Production> observable, Production oldValue, Production newValue) {
                 if(newValue != null) {
-                    selectedItem = idMovieList.getSelectionModel().getSelectedIndex();
+                    ExecGui.prodSys.selectedItem = movieList.getSelectionModel().getSelectedIndex();
                     updateInfo(newValue);
                 }
             }
         });
 
         // Selecting first item automatically, unless there is no items.
-        if(!idMovieList.getItems().isEmpty()) {
-            idMovieList.getSelectionModel().select(selectedItem);
+        if(!movieList.getItems().isEmpty()) {
+            movieList.getSelectionModel().select(ExecGui.prodSys.selectedItem);
         }
 
-        if(!editMode) {
-            disableEditMode();
-        }
+        // Disallowing the date to be chosen
+        releaseDate.setOnMouseClicked(e -> {
+            if (releaseDate.isShowing())
+                releaseDate.hide();
+        });
     }
 
     /**
@@ -67,10 +60,10 @@ public class ViewMovieController {
      * @param selectedProduction Any Production object
      */
     private void updateInfo(Production selectedProduction) {
-        idMovieTitle.setText(selectedProduction.getTitle());
-        idMovieDescription.setText(selectedProduction.getDescription());
-        idDatePicker.setValue(selectedProduction.getReleaseDate());
-        idMovieRuntime.setText(Integer.toString(selectedProduction.getRuntime()));
+        titleLabel.setText(selectedProduction.getTitle());
+        description.setText(selectedProduction.getDescription());
+        releaseDate.setValue(selectedProduction.getReleaseDate());
+        runtime.setText(Integer.toString(selectedProduction.getRuntime()));
     }
 
     /**
@@ -86,56 +79,17 @@ public class ViewMovieController {
      * @param actionEvent
      */
     public void deleteMovie(ActionEvent actionEvent) {
-        if(!idMovieList.getItems().isEmpty()){
-            idMovieList.getItems().remove(idMovieList.getSelectionModel().getSelectedIndex());
+        if(!movieList.getItems().isEmpty()){
+            movieList.getItems().remove(movieList.getSelectionModel().getSelectedIndex());
         }
         else {
             ExecGui.prodSys.showError("Stop deleting stuff that isn't there man..");
         }
     }
 
-    /**
-     * Pretty self-explanatory.. Enables editMode and restarts GUI.
-     */
-    public void enableEditMode() {
-        editMode = true;
-        btnSave.setVisible(true);
-        selectedItem = idMovieList.getSelectionModel().getSelectedIndex();
-        idMovieDescription.editableProperty().setValue(true);
-        idMovieRuntime.editableProperty().setValue(true);
-        idDatePicker.editableProperty().setValue(true);
-        idDatePicker.setOnMouseClicked(e -> {
-            idDatePicker.show();
-        });
-
-        idMovieRuntime.setText(Integer.toString(idMovieList.getSelectionModel().getSelectedItem().getRuntime()));
-
-        initialize();
-    }
-
-    public void disableEditMode() {
-        btnSave.setVisible(false);
-
-        idMovieDescription.editableProperty().setValue(false);
-        idMovieRuntime.editableProperty().setValue(false);
-        idDatePicker.editableProperty().setValue(false);
-
-        idDatePicker.setOnMouseClicked(e -> {
-            if (idDatePicker.isShowing())
-                idDatePicker.hide();
-        });
-    }
-
-    /**
-     * Exiting editmode and storing data.
-     */
-    public void saveMovie() {
-        idMovieList.getSelectionModel().getSelectedItem().setDescription(idMovieDescription.getText());
-        idMovieList.getSelectionModel().getSelectedItem().setReleaseDate(idDatePicker.getValue());
-        idMovieList.getSelectionModel().getSelectedItem().setRuntime(Integer.parseInt(idMovieRuntime.getText()));
-        idMovieList.refresh();
-
-        editMode = false;
-        initialize();
+    public void editMovie(ActionEvent actionEvent) {
+        if(!movieList.getSelectionModel().isEmpty()) {
+            ExecGui.prodSys.editMovies();
+        }
     }
 }
