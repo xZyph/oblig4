@@ -42,8 +42,8 @@ public class AddMovieController {
                 throw new Error("It is common courtesy to add a description when adding a movie.");
             if(idDatePicker.getValue() == null)
                 throw new Error("You seriously forgot to try the awesome JavaFX DatePicker?!");
-            if(Integer.parseInt(idMovieRuntime.getText()) < 0)
-                throw new Error("I know it's confusing, but the runtime is measured in ints. I mean minutes!");
+            if(Integer.parseInt(idMovieRuntime.getText()) >= 6000)
+                throw new Error("Say what? I don't want movies that last that long...");
 
             Production newObj = new Movie(
                     idMovieTitle.getText(),

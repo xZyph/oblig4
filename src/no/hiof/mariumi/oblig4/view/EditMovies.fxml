@@ -98,12 +98,17 @@
                                         <DatePicker fx:id="releaseDate" minHeight="25.0" minWidth="260.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                                         <Button fx:id="btnSave" minHeight="37.0" minWidth="55.0" mnemonicParsing="false" onAction="#saveMovie" text="Save" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
                                             <GridPane.margin>
-                                                <Insets right="10.0" />
+                                                <Insets right="76.0" />
                                             </GridPane.margin>
                                             <padding>
                                                 <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
                                             </padding>
                                         </Button>
+                              <Button minHeight="37.0" minWidth="66.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+                                 <padding>
+                                    <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                                 </padding>
+                              </Button>
                               <Label text="Title" />
                               <TextField fx:id="title" GridPane.columnIndex="1" />
                                     </children>

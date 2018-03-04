@@ -38,8 +38,8 @@
       <file leaf-file-name="ExecGui.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/ExecGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="74" column="37" lean-forward="true" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
+            <state relative-caret-position="1054">
+              <caret line="74" column="37" lean-forward="false" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4113#4114#0" expanded="true" />
@@ -54,7 +54,7 @@
       <file leaf-file-name="NumberField.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/customcomponents/numberfield/NumberField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="306">
               <caret line="20" column="59" lean-forward="false" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -66,8 +66,8 @@
       <file leaf-file-name="ViewMovieController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/controller/ViewMovieController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="68" column="7" lean-forward="true" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
+            <state relative-caret-position="1037">
+              <caret line="68" column="7" lean-forward="false" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2374#2375#0" expanded="true" />
@@ -79,24 +79,26 @@
       </file>
       <file leaf-file-name="EditMovies.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/view/EditMovies.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="39" column="93" lean-forward="true" selection-start-line="39" selection-start-column="93" selection-end-line="39" selection-end-column="93" />
-              <folding />
-            </state>
-          </provider>
           <provider editor-type-id="JavaFX-Scene-Builder">
             <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="106" column="108" lean-forward="false" selection-start-line="106" selection-start-column="108" selection-end-line="106" selection-end-column="108" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="EditMovieController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/controller/EditMovieController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+            <state relative-caret-position="769">
+              <caret line="86" column="37" lean-forward="true" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3095#3096#0" expanded="true" />
+                <element signature="e#3139#3140#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,14 +106,14 @@
       </file>
       <file leaf-file-name="ViewMovies.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/view/ViewMovies.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
+            <state relative-caret-position="765">
               <caret line="45" column="117" lean-forward="false" selection-start-line="45" selection-start-column="117" selection-end-line="45" selection-end-column="117" />
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
           </provider>
         </entry>
       </file>
@@ -119,7 +121,7 @@
         <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/customcomponents/numberfield/NumberFieldFX.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -127,22 +129,22 @@
       </file>
       <file leaf-file-name="AddMovie.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/view/AddMovie.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="740">
-              <caret line="52" column="14" lean-forward="true" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
           <provider editor-type-id="JavaFX-Scene-Builder">
             <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="AddMovieController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/controller/AddMovieController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+            <state relative-caret-position="582">
+              <caret line="51" column="62" lean-forward="true" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -213,12 +215,12 @@
         <option value="$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/customcomponents/numberfield/NumberFieldFX.java" />
         <option value="$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/view/AddMovie.fxml" />
         <option value="$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/customcomponents/numberfield/NumberField.java" />
-        <option value="$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/controller/AddMovieController.java" />
         <option value="$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/view/EditMovies.fxml" />
-        <option value="$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/controller/EditMovieController.java" />
         <option value="$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/ExecGui.java" />
         <option value="$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/view/ViewMovies.fxml" />
         <option value="$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/controller/ViewMovieController.java" />
+        <option value="$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/controller/AddMovieController.java" />
+        <option value="$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/controller/EditMovieController.java" />
       </list>
     </option>
   </component>
@@ -250,6 +252,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -300,10 +305,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -430,11 +432,12 @@
       <workItem from="1520108442495" duration="6182000" />
       <workItem from="1520118583644" duration="1412000" />
       <workItem from="1520161267099" duration="17508000" />
+      <workItem from="1520198610789" duration="1304000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71506000" />
+    <option name="totallyTimeSpent" value="72810000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -455,7 +458,6 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17760417" sideWeight="0.4963274" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -467,6 +469,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -545,14 +548,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/view/ViewMovies.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/ExecSystem.java">
@@ -624,14 +627,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/view/ViewMovies.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/ExecSystem.java">
@@ -759,63 +762,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/snacks/NumberField.java" />
-    <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/controller/IntegerField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/numberfield/IntegerField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/numberfield/IntegerField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/controller/IntegerField.java" />
+    <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/numberfield/IntegerField.java" />
+    <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/numberfield/IntegerField.java" />
     <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/customcomponents/numberfield/NumberField.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="90" lean-forward="false" selection-start-line="2" selection-start-column="90" selection-end-line="2" selection-end-column="90" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/customcomponents/numberfield/NumberFieldFX.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/view/AddMovie.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="52" column="14" lean-forward="true" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/customcomponents/numberfield/NumberField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="306">
           <caret line="20" column="59" lean-forward="false" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -823,31 +786,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/controller/AddMovieController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/view/EditMovies.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="39" column="93" lean-forward="true" selection-start-line="39" selection-start-column="93" selection-end-line="39" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/ExecGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="74" column="37" lean-forward="true" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
+        <state relative-caret-position="1054">
+          <caret line="74" column="37" lean-forward="false" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4113#4114#0" expanded="true" />
@@ -859,20 +801,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/view/ViewMovies.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
+        <state relative-caret-position="765">
           <caret line="45" column="117" lean-forward="false" selection-start-line="45" selection-start-column="117" selection-end-line="45" selection-end-column="117" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/controller/ViewMovieController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="7" lean-forward="true" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
+        <state relative-caret-position="1037">
+          <caret line="68" column="7" lean-forward="false" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2374#2375#0" expanded="true" />
@@ -881,12 +823,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/controller/EditMovieController.java">
+    <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/customcomponents/numberfield/NumberFieldFX.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+        <state relative-caret-position="357">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/controller/AddMovieController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="51" column="62" lean-forward="true" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/view/AddMovie.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/view/EditMovies.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="106" column="108" lean-forward="false" selection-start-line="106" selection-start-column="108" selection-end-line="106" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hiof/mariumi/oblig4/controller/EditMovieController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="769">
+          <caret line="86" column="37" lean-forward="true" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3095#3096#0" expanded="true" />
+            <element signature="e#3139#3140#0" expanded="true" />
           </folding>
         </state>
       </provider>
