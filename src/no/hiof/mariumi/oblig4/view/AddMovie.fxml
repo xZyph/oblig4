@@ -10,8 +10,9 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
+<?import no.hiof.mariumi.oblig4.customcomponents.numberfield.NumberField?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.hiof.mariumi.oblig4.controller.AddMovieController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.hiof.mariumi.oblig4.controller.AddMovieController">
    <children>
       <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #3472d8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -45,8 +46,8 @@
             <Label text="Runtime" GridPane.rowIndex="3" />
             <TextField fx:id="idMovieTitle" GridPane.columnIndex="1" />
             <TextArea fx:id="idMovieDescription" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField fx:id="idMovieRuntime" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <DatePicker fx:id="idDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <NumberField fx:id="idMovieRuntime" GridPane.columnIndex="1" GridPane.rowIndex="3" />
          </children>
       </GridPane>
    </children>

@@ -72,15 +72,16 @@ public class ExecGui extends Application{
 
     public void movieOverview() {
         Parent viewMoviesFXML = null;
+        Scene viewMovies;
 
         try {
-            viewMoviesFXML = FXMLLoader.load(getClass().getResource("view/ViewMovies.fxml"));
+            viewMoviesFXML = new FXMLLoader().load(getClass().getResource("view/ViewMovies.fxml"));
         }
         catch (IOException e) {
             showError(e.getMessage());
         }
 
-        Scene viewMovies = new Scene(viewMoviesFXML);
+        viewMovies = new Scene(viewMoviesFXML);
         primaryStage.setScene(viewMovies);
         primaryStage.setTitle("Movie Overview");
         primaryStage.show();

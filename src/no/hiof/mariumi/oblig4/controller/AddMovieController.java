@@ -1,7 +1,5 @@
 package no.hiof.mariumi.oblig4.controller;
 
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -27,21 +25,6 @@ public class AddMovieController {
 
     @FXML
     public void initialize() {
-        idMovieRuntime.lengthProperty().addListener(new ChangeListener<Number>() {
-            @Override
-            public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
-                if(newValue.intValue() > oldValue.intValue()){
-                    char x = idMovieRuntime.getText().charAt(oldValue.intValue());
-                    if(!(x >= '0' && x <= '9')){
-                        idMovieRuntime.setText(idMovieRuntime.getText().substring(0, idMovieRuntime.getText().length()-1));
-                    }
-                }
-                if(Integer.parseInt(idMovieRuntime.getText()) > 6000){
-                    ExecGui.prodSys.showError("You seriously want me to believe that the movie is over 100 hours long? -_-");
-                    idMovieRuntime.setText("1337");
-                }
-            }
-        });
     }
 
     @FXML

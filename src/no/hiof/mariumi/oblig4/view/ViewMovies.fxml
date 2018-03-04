@@ -6,13 +6,13 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
+<?import no.hiof.mariumi.oblig4.customcomponents.numberfield.NumberField?>
 
 <AnchorPane prefHeight="640.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.hiof.mariumi.oblig4.controller.ViewMovieController">
    <children>
@@ -43,7 +43,7 @@
                            <Insets top="15.0" />
                        </HBox.margin>
                    </Button>
-                   <Button fx:id="btnEditMovie" minHeight="25.0" minWidth="37.0" mnemonicParsing="false" text="Edit">
+                   <Button fx:id="btnEditMovie" minHeight="25.0" minWidth="37.0" mnemonicParsing="false" onAction="#enableEditMode" text="Edit">
                        <HBox.margin>
                            <Insets left="20.0" top="15.0" />
                        </HBox.margin>
@@ -91,9 +91,9 @@
                               <Label minWidth="61.0" text="Description" />
                               <Label minWidth="64.0" text="Releasedate" GridPane.rowIndex="1" />
                               <Label minWidth="45.0" text="Runtime" GridPane.rowIndex="2" />
-                              <TextArea fx:id="idMovieDescription" editable="false" minHeight="100.0" prefHeight="200.0" prefWidth="200.0" wrapText="true" GridPane.columnIndex="1" />
-                              <TextField fx:id="idMovieRuntime" editable="false" minHeight="25.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                              <DatePicker fx:id="idDatePicker" minHeight="25.0" minWidth="260.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextArea fx:id="idMovieDescription" minHeight="100.0" prefHeight="200.0" prefWidth="200.0" wrapText="true" GridPane.columnIndex="1" />
+                              <NumberField fx:id="idMovieRuntime" editable="false" minHeight="25.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <DatePicker fx:id="idDatePicker" editable="false" minHeight="25.0" minWidth="260.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                               <Button fx:id="btnSave" minHeight="37.0" minWidth="55.0" mnemonicParsing="false" onAction="#saveMovie" text="Save" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
                                  <GridPane.margin>
                                     <Insets right="10.0" />
