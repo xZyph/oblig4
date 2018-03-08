@@ -40,6 +40,7 @@ public class Series implements Comparable {
         setEpisodeList(new ArrayList<Episode>());
 
         seriesList.add(this);
+        Collections.sort(seriesList);
     }
 
     /**
@@ -56,6 +57,7 @@ public class Series implements Comparable {
         setEpisodeList(new ArrayList<Episode>());
 
         seriesList.add(this);
+        Collections.sort(seriesList);
     }
 
     /* GETTERS */
@@ -147,6 +149,7 @@ public class Series implements Comparable {
             episodeList.add(newEpisode);
             seasonSize = newEpisode.getSeasonNo();
             updateAvgRuntime();
+            Collections.sort(episodeList);
         }
         catch (Error e) {
             System.out.println("ERROR: " + e.getLocalizedMessage());

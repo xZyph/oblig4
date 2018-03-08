@@ -18,7 +18,6 @@ public abstract class Production {
     private int runtime;
     private ArrayList<Persona> cast;
     private ArrayList<Role> crew;
-    private static ArrayList<Production> productions = new ArrayList<>();
 
     /* CONSTRUCTORS */
 
@@ -34,7 +33,6 @@ public abstract class Production {
         setReleaseDate(LocalDate.now());
         cast = new ArrayList<>();
         crew = new ArrayList<>();
-        productions.add(this);
     }
 
     /**
@@ -50,7 +48,6 @@ public abstract class Production {
         setReleaseDate(LocalDate.now());
         cast = new ArrayList<>();
         crew = new ArrayList<>();
-        productions.add(this);
     }
 
     public Production(String title, String description, LocalDate releaseDate, int runtime) {
@@ -96,8 +93,8 @@ public abstract class Production {
         return crew;
     }
 
-    public static ArrayList<Production> getProductions() {
-        return productions;
+    public String getRuntimeHrsAndMins() {
+        return (getRuntime() / 60) + "hrs " + (getRuntime() % 60) + "min";
     }
 
     /* SETTERS */

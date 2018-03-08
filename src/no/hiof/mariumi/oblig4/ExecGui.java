@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.image.Image;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import no.hiof.mariumi.oblig4.model.Movie;
@@ -22,14 +23,13 @@ import java.time.LocalDate;
  * @version 0.1
  *
  * TODO:
- *   - Add functionality for LocalDate input in viewMovies.fxml
- *   - Demonstrate all non-graphic assignments in code.
  *   - Clean up code.
  *   - Add remaining JavaDoc.
  */
 public class ExecGui extends Application{
     public static ExecGui prodSys;
     public int selectedItem = 0;
+    public String cssMain = getClass().getResource("main.css").toExternalForm();
     private Stage primaryStage;
     private ObservableList<Production> movieList = FXCollections.observableArrayList();
 
@@ -82,8 +82,10 @@ public class ExecGui extends Application{
         }
 
         Scene viewMovies = new Scene(viewMoviesFXML);
+        viewMovies.getStylesheets().add(cssMain);
         primaryStage.setScene(viewMovies);
-        primaryStage.setTitle("Movie Overview");
+        primaryStage.setTitle("prodSys - keep track of your addiction to movies!");
+        primaryStage.getIcons().add(new Image(getClass().getResourceAsStream( "media/icon.png" )));
         primaryStage.show();
     }
 

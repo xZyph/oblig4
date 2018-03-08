@@ -6,7 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import no.hiof.mariumi.oblig4.ExecGui;
-import no.hiof.mariumi.oblig4.customcomponents.numberfield.NumberField;
+import no.hiof.mariumi.oblig4.model.Movie;
 import no.hiof.mariumi.oblig4.model.Production;
 
 public class ViewMovieController {
@@ -21,7 +21,7 @@ public class ViewMovieController {
     @FXML
     private DatePicker releaseDate;
     @FXML
-    private NumberField runtime;
+    private TextField runtime;
     @FXML
     private Button btnNew;
     @FXML
@@ -63,7 +63,7 @@ public class ViewMovieController {
         titleLabel.setText(selectedProduction.getTitle());
         description.setText(selectedProduction.getDescription());
         releaseDate.setValue(selectedProduction.getReleaseDate());
-        runtime.setText(Integer.toString(selectedProduction.getRuntime()));
+        runtime.setText(selectedProduction.getRuntimeHrsAndMins());
     }
 
     /**

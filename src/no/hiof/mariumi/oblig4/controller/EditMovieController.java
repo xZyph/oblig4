@@ -63,7 +63,7 @@ public class EditMovieController {
                 throw new Error("It's common courtesy to include a description...");
             if(releaseDate.getValue() == null)
                 throw new Error("Ooops, forgot the release date..");
-            if(runtime.getText().isEmpty())
+            if(runtime.getText().isEmpty() || Integer.parseInt(runtime.getText()) <= 0)
                 throw new Error("Did you forget the runtime perhaps?");
             if(Integer.parseInt(runtime.getText()) >= 6000)
                 throw new Error("You expect me to believe that this movie is over a hundred hours long?!");

@@ -44,10 +44,10 @@
             <Label text="Description" GridPane.rowIndex="1" />
             <Label text="Releasedate" GridPane.rowIndex="2" />
             <Label text="Runtime" GridPane.rowIndex="3" />
-            <TextField fx:id="idMovieTitle" GridPane.columnIndex="1" />
-            <TextArea fx:id="idMovieDescription" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <DatePicker fx:id="idDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <NumberField fx:id="idMovieRuntime" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="title" GridPane.columnIndex="1" />
+            <TextArea fx:id="description" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <DatePicker fx:id="releaseDate" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <NumberField fx:id="runtime" GridPane.columnIndex="1" GridPane.rowIndex="3" />
          </children>
       </GridPane>
    </children>
